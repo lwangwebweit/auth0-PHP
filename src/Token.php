@@ -275,7 +275,7 @@ final class Token implements TokenInterface
         return $this;
     }
 
-    private function getParser(): Parser
+    public function getParser(): Parser
     {
         if (! $this->parser instanceof Parser) {
             $this->parser = new Parser($this->configuration, $this->jwt);
